@@ -18,5 +18,13 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             InitializeComponent();
             account_id = id;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            EditProfile editProfile = new EditProfile(account_id);
+            editProfile.ShowDialog();
+            Show();
+        }
     }
 }

@@ -87,6 +87,11 @@ namespace Clinic_Management_CSC_289_Capstone_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!validateInputs())
+            {
+                MessageBox.Show("Please check the input fields again!");
+                return;
+            }
             SqlConnection con = new SqlConnection(Properties.Resources.connectionString);
             SqlCommand command = con.CreateCommand();
             command.CommandText = "INSERT INTO [user] (user_username, user_password) VALUES(@username, @password)";
@@ -113,15 +118,50 @@ namespace Clinic_Management_CSC_289_Capstone_Project
                     MessageBox.Show("Account was successfully created!");
                 }
                 else
-                {
                     MessageBox.Show("Error while creating the account!");
-                }
             }
             else
-            {
                 MessageBox.Show("Error while creating the account!");
-            }
             con.Close();
+            updateList("");
+        }
+
+        private bool validateInputs()
+        {
+            if(textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+                return false;
+
+            if (comboBox1.SelectedIndex < 0)
+                return false;
+
+            return true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox7.Text == "")
+                return;
+
+
+            SqlConnection con = new SqlConnection(Properties.Resources.connectionString);
+            SqlCommand command = con.CreateCommand();
+            command.CommandText = "DELETE FROM [user] WHERE user_username=@username";
+            command.Parameters.AddWithValue("@username", textBox7.Text);
+            con.Open();
+            if (command.ExecuteNonQuery() > 0)
+                MessageBox.Show("Account was deleted!");
+            else
+                MessageBox.Show("Account was not deleted!");
+            con.Close();
+            updateList("");
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
         }
     }
 }
