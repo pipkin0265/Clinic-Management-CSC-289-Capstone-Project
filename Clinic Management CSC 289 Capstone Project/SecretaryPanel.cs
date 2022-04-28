@@ -26,5 +26,29 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             editProfile.ShowDialog();
             Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            PatientProfiles patientProfiles = new PatientProfiles();
+            patientProfiles.ShowDialog();
+            Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CreateReservation createReservation = new CreateReservation(account_id);
+            createReservation.ShowDialog();
+            Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ViewReservation viewReservation = new ViewReservation(account_id);
+            viewReservation.ShowDialog();
+            Show();
+        }
     }
 }

@@ -53,6 +53,12 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReservation.Designer.cs">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,8 +77,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientProfiles.Designer.cs">
+      <DependentUpon>PatientProfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
     <Compile Include="SecretaryPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +93,17 @@
       <DependentUpon>SecretaryPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities.cs" />
+    <Compile Include="ViewReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReservation.Designer.cs">
+      <DependentUpon>ViewReservation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReservation.resx">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorPanel.resx">
       <DependentUpon>DoctorPanel.cs</DependentUpon>
@@ -91,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientProfiles.resx">
+      <DependentUpon>PatientProfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
