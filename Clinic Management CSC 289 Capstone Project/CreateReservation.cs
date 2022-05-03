@@ -97,11 +97,11 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             int slot = ((KeyValuePair<int, string>)comboBox1.SelectedItem).Key;
 
             command = con.CreateCommand();
-            command.CommandText = "INSERT INTO reservation (reservation_secretary_id, reservation_patient_id, reservation_visit_date, reservation_visit_slot, reservation_date) VALUES (@secretary_id, @patient_id, @vist_date, @visit_slot, @date)";
+            command.CommandText = "INSERT INTO reservation (reservation_secretary_id, reservation_patient_id, reservation_visit_date, reservation_visit_slot, reservation_date) VALUES (@secretary_id, @patient_id, @visit_date, @visit_slot, @date)";
             command.Parameters.AddWithValue("@secretary_id", secretary_id);
             command.Parameters.AddWithValue("@patient_id", patient_id);
             command.Parameters.AddWithValue("@visit_date", dateTimePicker1.Value.ToString());
-            command.Parameters.AddWithValue("@vist_slot", slot);
+            command.Parameters.AddWithValue("@visit_slot", slot);
             command.Parameters.AddWithValue("@date", DateTime.Now);
 
             con.Open();
