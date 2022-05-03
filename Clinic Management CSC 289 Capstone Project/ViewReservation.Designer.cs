@@ -37,6 +37,12 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,12 +50,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -163,6 +163,52 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reservation Details";
             // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(112, 248);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 43);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(112, 202);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(226, 26);
+            this.textBox7.TabIndex = 11;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(112, 170);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(226, 26);
+            this.textBox6.TabIndex = 10;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(112, 138);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(226, 26);
+            this.textBox5.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(112, 106);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(226, 26);
+            this.textBox4.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(112, 74);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(226, 26);
+            this.textBox3.TabIndex = 7;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -223,51 +269,6 @@
             this.label3.Size = new System.Drawing.Size(30, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "ID:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(112, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 26);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(112, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 26);
-            this.textBox4.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(112, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 26);
-            this.textBox5.TabIndex = 9;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(112, 170);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(226, 26);
-            this.textBox6.TabIndex = 10;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(112, 202);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(226, 26);
-            this.textBox7.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(112, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 43);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 

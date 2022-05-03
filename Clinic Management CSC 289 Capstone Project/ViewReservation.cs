@@ -99,7 +99,30 @@ namespace Clinic_Management_CSC_289_Capstone_Project
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
+            updateForm();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
+            {
+                MessageBox.Show("Please select a reservation!");
+                return;
+            }
+
+            Reservation res = (Reservation)listBox1.SelectedItem;
+
+            Hide();
+            EditReservation editReservation = new EditReservation(res);
+            editReservation.ShowDialog();
+            updateList();
+            updateForm();
+            Show();
+        }
+
+        private void updateForm()
+        {
+            if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
             {
                 MessageBox.Show("Please select a reservation!");
                 return;
