@@ -37,6 +37,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -143,6 +144,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -163,10 +165,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reservation Details";
             // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(185, 245);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 43);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Visits";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(112, 248);
+            this.button1.Location = new System.Drawing.Point(24, 245);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 43);
             this.button1.TabIndex = 12;
@@ -324,5 +337,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

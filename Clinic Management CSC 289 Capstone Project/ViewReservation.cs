@@ -116,7 +116,21 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             EditReservation editReservation = new EditReservation(res);
             editReservation.ShowDialog();
             updateList();
-            updateForm();
+            Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
+            {
+                MessageBox.Show("Please select a reservation!");
+                return;
+            }
+
+            Reservation res = (Reservation)listBox1.SelectedItem;
+            Hide();
+            Visits visits = new Visits(account_id, res.patient.Key, res.id);
+            visits.ShowDialog();
             Show();
         }
 
@@ -140,6 +154,11 @@ namespace Clinic_Management_CSC_289_Capstone_Project
                 button1.Enabled = true;
             else
                 button1.Enabled = false;
+
+            if (account_type == 1)
+                button2.Enabled = true;
+            else
+                button2.Enabled= false;
         }
     }
 }

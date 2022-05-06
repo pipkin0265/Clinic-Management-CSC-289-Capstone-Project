@@ -105,6 +105,13 @@
     <Compile Include="ViewReservation.Designer.cs">
       <DependentUpon>ViewReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="visit.cs" />
+    <Compile Include="Visits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visits.Designer.cs">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewReservation.resx">
       <DependentUpon>ViewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visits.resx">
+      <DependentUpon>Visits.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
