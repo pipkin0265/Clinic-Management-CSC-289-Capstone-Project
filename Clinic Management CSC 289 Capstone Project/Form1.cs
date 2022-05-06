@@ -25,7 +25,7 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             SqlCommand command = con.CreateCommand();
             command.CommandText = "SELECT user_id FROM [user] WHERE user_username=@username AND user_password=@password";
             command.Parameters.AddWithValue("@username", textBox1.Text);
-            command.Parameters.AddWithValue("@password", textBox2.Text);    // Utilities.hashPassword(textBox2.Text));
+            command.Parameters.AddWithValue("@password", Utilities.hashPassword(textBox2.Text));    // Utilities.hashPassword(textBox2.Text));
             con.Open();
             var result = command.ExecuteScalar();
             con.Close();

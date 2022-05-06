@@ -46,7 +46,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(12, 68);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 50);
+            this.button2.Size = new System.Drawing.Size(126, 90);
             this.button2.TabIndex = 1;
             this.button2.Text = "View Reservations";
             this.button2.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(320, 180);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "DoctorPanel";

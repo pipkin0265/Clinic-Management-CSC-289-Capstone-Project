@@ -42,7 +42,7 @@ namespace Clinic_Management_CSC_289_Capstone_Project
 
             command.CommandText = "INSERT INTO [user] (user_username, user_password) VALUES (@username, @password)";
             command.Parameters.AddWithValue("@username", "admin");
-            command.Parameters.AddWithValue("password", hashPassword(password));
+            command.Parameters.AddWithValue("@password", hashPassword(password));
 
             con.Open();
 

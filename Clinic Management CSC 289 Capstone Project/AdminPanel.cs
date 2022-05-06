@@ -23,7 +23,7 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             SqlConnection con = new SqlConnection(Properties.Resources.connectionString);
             SqlCommand command = con.CreateCommand();
             con.Open();
-            command.CommandText = "SELECT account_id, account_name, account_type FROM account WHERE account_type in (0, 1) AND (accont_name LIKE @query OR account_phone LIKE @query) ORDER BY acount account_type";
+            command.CommandText = "SELECT account_id, account_name, account_type FROM account WHERE account_type in (0, 1) AND (account_name LIKE @query OR account_phone LIKE @query) ORDER BY account_type";
             command.Parameters.AddWithValue("@query", query + "%");
 
             SqlDataReader reader = command.ExecuteReader();
@@ -153,6 +153,7 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             else
                 MessageBox.Show("Account was not deleted!");
             con.Close();
+
             updateList("");
             textBox6.Clear();
             textBox7.Clear();
@@ -162,6 +163,7 @@ namespace Clinic_Management_CSC_289_Capstone_Project
             textBox11.Clear();
             textBox12.Clear();
             textBox13.Clear();
+            
         }
     }
 }
